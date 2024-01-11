@@ -115,39 +115,93 @@ img {
   max-width: 100%;
 }
 /* container */
-.container{
-    max-width:120rem;
-    margin:0 auto;
-    width:100;
-    padding:1.5rem;
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 100;
+  padding: 1.5rem;
 }
 
 /* HEADER */
-.header{
-    background:#2b2b2b;
-
+.header {
+  background:transparent;
+  position:fixed;
+  width:100%;
+  margin-top:5rem;
 }
 .header__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .header__nav ul {
-    display: flex;
-  }
-  .header__nav ul li{
-    
-    padding:1.5rem 2rem;
-  }
-  .header__nav ul li:hover {
-    background:#ffffff;
-  }
-  .header__nav ul li a{
-    font-size:2rem;
-   font-weight:600;
-   color:#ffffff
-  }
-  .header__nav ul li:hover a{
-    color:#fb4d3d;
-  }
-   
+  display: flex;
+}
+.header__nav ul li {
+  padding: 1.5rem 2rem;
+}
+.header__nav ul li:hover {
+  background: #ffffff;
+}
+.header__nav ul li.active a{
+ border-bottom:3px solid #fb4d3d;
+
+}
+.header__nav ul li a {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  padding:1rem 0;
+}
+.header__nav ul li:hover a {
+  color: #fb4d3d;
+}
+
+/* banner */
+.banner{
+  background-image:url("./img1/banner-img.png");
+  background-size: cover;
+  background-repeat:no-repeat;
+  height:100vh;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align: center;
+}
+.banner__content h1{
+  font-size:10rem;
+  color:#ffffff;
+  max-width:80rem;
+  margin:0 auto;
+  margin-bottom: 5rem auto;
+  font-weight:600;
+}
+
+/* REPEATABLE PATTERNS */
+.btn{
+  display:inline-block;
+  padding:1.5rem 2rem;
+  color:#ffffff;
+  font-weight:600;
+  border:2px solid transparent;
+  border-radius:5rem;
+  width:25rem;
+  font-size:2rem;
+  transition:.5s ease;
+}
+.btn.bg--transparent{
+  border:2px solid #ffffff;
+}
+.btn.bg--transparent:hover{
+  border:2px solid transparent;
+  background:#fb4d3d;
+  scale:1.1;
+  transition:.5s ease
+}
+.banner__btn{
+  display:flex;
+  gap;5rem;
+}
+
+
